@@ -1,0 +1,111 @@
+body {
+	margin: 0;
+	padding: 20px;
+    background-image: url(bg-image.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+.main-weather-card {
+	margin: 100px auto;
+	padding: 40px;
+	width: fit-content;
+	height: fit-content;
+	text-align: center;
+	border-radius: 40px;
+	background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar {
+	margin: 10px;
+	padding: 4px 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	width: 100%;
+	border-radius: 40px;
+}
+
+#search-input {
+	border: none;
+	background: transparent;
+	font-size: 120%;
+	flex-grow: 1;
+}
+#search-input:focus {
+	border: none;
+	outline: none;
+}
+
+#search-btn {
+	padding: 4px 10px;
+	border: none;
+	border-radius: 20px;
+	background: transparent;
+	font-size: 120%;
+	align-self: flex-end;
+}
+#search-btn:hover {
+	background-color: #F8F6F0;
+}
+
+.weather {
+	margin: 10px;
+	padding: 10px;
+	display: none;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(20px);
+	width: 100%;
+	height: fit-content;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.weather h3 {
+	margin: 0;
+	padding: 4px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: fit-content;
+	flex-basis: 100%;
+}
+
+#temperature {
+	padding: 4px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: fit-content;
+	flex-basis: 100%;
+	font-size: 300%;
+}
+
+#humidity, #windspeed {
+	padding: 4px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	font-size: 150%;
+	flex-grow: 1;
+}
+
+#condition {
+	padding: 4px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: fit-content;
+	flex-basis: 100%;
+	font-size: 150%;
+}
