@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chaitanya Shah">
+
+    <title>Weather App</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="main-weather-card">
+		<div id="search-bar">
+			<input type="text" id="search-input" placeholder="Enter City">
+			<button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+		</div>
+
+		<div class="weather">
+			<h3 title="Location"></h3>
+			<div id="temperature" title="Temperature"></div>
+			<div id="humidity" title="Humidity"></div>
+			<div id="windspeed" title="Wind Speed"></div>
+			<div id="condition" title="Conditions"></div>
+		</div>
+	</div>
+
+
+	<!-- JS for API Key -->
+	<script type="text/javascript" src="config.js"></script>
+	<!-- JavaScript -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
